@@ -1,0 +1,551 @@
+body{
+    width:100%;
+    height: 100%;
+
+}
+header{
+    /* background: linear-gradient(to right,#EB6834,rgb(175 229 254)); */
+    background: linear-gradient(to right,#c1040d,rgb(172 12 22));
+    width: 100%;
+    height: 400px;
+}
+header>div{
+    background-image: url(../images/battle3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 1200px;
+    height:100%;
+    margin: 0 auto;
+    position: relative;
+}
+header>div>div{
+    padding-top:100px;
+    font-size: 70px;
+    text-shadow: 7px 5px 5px #3f3f3f;
+    font-weight: bolder;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-family: STXingkai;
+    letter-spacing: 15px;
+}
+header>div a{
+    color: white;
+    font-weight: bold;
+}
+header>div>ul{
+    position: relative;
+    top:30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header>div>ul>li{
+    display: inline;
+    width: 80px;
+}
+header>div>ul>li a{
+    margin: 0 auto;
+    display: block;
+}
+header>div>ul>li a:first-child{
+    width: 50px;
+}
+
+.content{
+   padding-top: 50px;
+    width: 1200px;
+    margin: 0 auto;
+}
+#banners{
+    width: 496px;
+    height:280px;
+    overflow: hidden;
+    display: inline-block;
+}
+.banners{
+    width: 506%;
+    height: 280px;
+    animation: banner 15s linear infinite;
+}
+.banners img{
+    width: 496px;
+    height: 280px;
+}
+.banners a{
+    position: relative;
+}
+.banners span{
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.308);
+    bottom: 16%;
+    left: 0%;
+}
+
+.banner1,.banner2,.banner3,.banner4,.banner5{
+    display: inline;
+    width: 500.74px;
+}
+
+@keyframes banner{
+    0%{margin-left: 0px;}
+    20%{margin-left: 0px;}
+    20.1%{margin-left: -101%;}
+    30%{margin-left: -101%;}
+    40%{margin-left: -101%;}
+    40.1%{margin-left: -202%;}
+    50%{margin-left: -202%;}
+    60%{margin-left: -202%;}
+    60.1%{margin-left: -303%;}
+    70%{margin-left: -303%;}
+    80%{margin-left: -303%;}
+    80.1%{margin-left: -404%;}
+    90%{margin-left: -404%;}
+    100%{margin-left: -404%;}
+}
+.newswork{
+    width: 670px;
+    display: block;
+    position: relative;
+    height: 280px;
+    float: right;
+}
+
+.newswork>div{
+    color: #9b0705;
+    font-weight: bold;
+    font-size: 25px;
+}
+.newswork>div>span{
+    float: right;
+    font-size: 10px;
+    color: rgb(167, 164, 164);
+    font-weight: lighter;
+}
+.newswork>div>span>a{
+    font-size: 10px;
+    color: rgb(167, 164, 164);
+    font-weight: lighter;
+}
+.newswork>div>span>a:hover{
+    color: tomato;
+}
+.newswork>div::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    right: 0;
+    border-bottom: 3px solid #9b0705;
+}
+.newswork>div::after{
+    content: "";
+    position: absolute;
+    top:25px;
+    left: 120px;
+    right: 0;
+    border-bottom: 1px solid #9b0705;
+}
+.newswork>a{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-bottom: 50px;
+    display: block;
+    border-bottom: 1px dashed #c9c9c9;
+}
+.newswork ul{
+    margin-top: 10px;
+}
+.newswork li{
+    background: url(../images/square.png) no-repeat center left;
+    background-size: 0.4rem 0.4rem;
+    margin-left: 20px;
+    height: 26px;
+}
+.newswork a{
+    padding-left: 10px;
+}
+.newswork li span{
+    float: right;
+    color: rgb(145, 145, 145);
+    font-size: 13px;
+    font-weight: normal;
+}
+.else{
+    width: 1200px;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.else>div{
+    width: 32%;
+}
+.else>div>div{
+    font-size: 25px;
+    color: #9b0705;
+    position: relative;
+}
+.else>div>div::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    right: 0;
+    border-bottom: 3px solid #9b0705;
+}
+.else>div>div>span{
+    float: right;
+    font-size: 10px;
+    color: rgb(167, 164, 164);
+    font-weight: lighter;
+}
+.else>div>div>span>a{
+    font-size: 10px;
+    color: rgb(167, 164, 164);
+    font-weight: lighter;
+}
+.else>div>div>span>a:hover{
+    color: tomato;
+}
+.else>div>div::after{
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 120px;
+    right: 0;
+    border-bottom: 1px solid #9b0705;
+}
+.else>div>ul li{
+    background: url(../images/square.png) no-repeat center left;
+    background-size: 0.4rem 0.4rem;
+    height: 26px;
+    line-height: 26px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed rgb(175, 175, 175);
+}
+.else>div>ul li:first-child{
+    margin-top: 10px;
+}
+.else>div>ul li:last-child{
+    border: none;
+}
+.else>div>ul a{
+    padding-left: 20px;
+}
+
+.content2{
+    width: 100%;
+}
+.content2>div{
+    width: 1200px;
+    margin: 0 auto;
+}
+.content2>div>div{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #9b0705;
+    font-weight: bold;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.content2>div>div:before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    right: 0;
+    border-bottom: 3px solid #9b0705;
+}
+.content2>div>div:after{
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 150px;
+    right: 0;
+    border-bottom: 1px solid #9b0705;
+}
+.formTable{
+    width: 800px;
+    margin: 0 auto;
+    background-color: #c92305;
+    color: white;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+.formTable tr td:first-child{
+    width: 80px;
+    text-align: right;
+}
+.formTable table{
+    margin: 0 auto;
+}
+.formTable tr td:nth-child(2){
+    width: 410px;
+}
+.formTable td{
+    height: 50px;
+}
+.formTable select{
+    width: 400px;
+    height: 50%;
+}
+.formTable input{
+    width: 400px;
+    height: 50%;
+}
+#sexmal{
+    width:10px;
+    height: 12.8px;
+    
+}
+#sexfemal{
+    width: 10px;
+    height: 12.8px;
+}
+#sub{
+    margin: 0 auto;
+    width: 80px;
+    height: 40px;
+    display: block;
+    border-radius: 5px;
+    border: 0;
+    background-color: #af0909;
+    color: white;
+}
+#sub:hover{
+    background-color: #e30e0e;
+}
+
+
+.content3{
+    width: 100%;
+}
+.content3>div{
+    width: 1200px;
+    margin: 0 auto;
+}
+.content3>div>div:first-child{
+    padding-top: 30px;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    color: #9b0705;
+    font-weight: bold;
+}
+.yiqingData{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.yiqingData>nav>ul{
+    
+    margin: 20px auto;
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+}
+.yiqingData>nav>ul>li{
+    display: inline;
+    width: 65px;
+    padding:5px 0;
+    
+}
+.yiqingData>nav>ul>li:first-child{
+    color: rgb(32, 122, 118);
+    font-weight: bolder;
+    border-bottom:3px solid rgb(32,122,118) ;
+}
+.datas{
+    width:800px;
+    margin: 0 auto;
+}
+.datas ul{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.datas li{
+    width: 200px;
+    text-align: center;
+    height: 80px;
+}
+.datas li span:last-child{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.datas li span{
+    display: block;
+}
+
+
+.datas2{
+    display: none;
+    width:800px;
+    margin: 0 auto;
+}
+.datas2 ul{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.datas2 li{
+    width: 266px;
+    text-align: center;
+    height: 80px;
+}
+.datas2 li span:last-child{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.datas2 li span{
+    display: block;
+}
+
+.datas3{
+    display: none;
+    width:800px;
+    margin: 0 auto;
+}
+.datas3 ul{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.datas3 li{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.content4>div{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content4>div>video{
+    padding-top: 50px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.content4>div>ul{
+    width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+    text-align: left;
+}
+.content4>div>ul>li{
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 1.5px;
+    padding-left: 10px;
+}
+.content4>div>ul>li:first-child{
+    background-color: rgb(131, 22, 3);
+    color: white;
+    font-weight: bold;
+}
+.content4>div>ul>li:hover{
+    background-color: rgb(172, 28, 3);
+    color: white;
+    font-weight: bold;
+}
+
+.knowledge{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.knowledge>h2{
+    margin: 0 auto;
+    text-align: center;
+    color: #9b0705;
+}
+.knowledge ul{
+    width: 100%;
+    margin-top: 30px;
+    font-size: 15px;
+    color: rgb(80, 80, 80);
+    margin-bottom: 30px;
+    font-weight:200;
+}
+.knowledge li{
+    width: 100%;
+    background: url(../images/square.png) no-repeat center left;
+    background-size: 0.4rem 0.4rem;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    border-bottom: 1px dashed rgb(224, 224, 224);
+}
+.knowledge li:last-child{
+    border: 0px;
+}
+.knowledge li span{
+    float: right;
+    color: rgb(177, 176, 176);
+}
+
+.content2,.content3,.content4,.content5{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #9b0705;
+    color: white;
+}
+footer>div{
+    width: 1200px;
+    margin: 0 auto;
+}
+footer ul{
+    margin-top: 30px;
+}
+footer li{
+    height: 30px;
+}
+footer li a{
+    color: white;
+}
+footer>div>div{
+    float: left;
+}
+footer>div>div:last-child{
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: STXingkai;
+    color: rgba(241, 241, 241, 0.555);
+    margin-top: 50px;
+}

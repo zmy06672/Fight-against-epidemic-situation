@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/resetStyle.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div>抗疫攻坚,我们在行动</div>
+            <ul>
+                <li><a href="./index.html"><img src="./images/首页.png" alt="icon"/></a><a href="./index.html">网站首页</a></li>
+                <li><a href="./works.html"><img src="./images/动态.png" alt="icon"/></a><a href="./works.html">工作动态</a></li>
+                <li><a href="./message.html"><img src="./images/通知中心.png" alt="icon"/></a><a href="./message.html">通知公告</a></li>
+                <li><a href="./video.html"><img src="./images/金点子.png" alt="icon"/></a><a href="./video.html">上级精神</a></li>
+                <li><a href="./knowkedge.html"><img src="./images/知识.png" alt="icon"/></a><a href="./knowkedge.html">防疫知识</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content3">
+        <div>
+            <div>疫情实时大数据汇报</div>
+            <div class="yiqingData">
+                <nav>
+                    <ul>
+                        <li onclick="checkData1()" class="nav">国内疫情</li>
+                        <li onclick="checkData2()" class="nav">国外疫情</li>
+                        <li onclick="checkData3()" class="nav">实时播报</li>
+                    </ul>
+                </nav>
+                <div class="datas">
+                    <ul>
+                        <li><span>现有确诊</span><span style="color:#ff6a57">3323</span></li>
+                        <li><span>无症状</span><span style="color:#e86d48">471</span></li>
+                        <li><span>现有疑似</span><span style="color:#ec9217">3</span></li>
+                        <li><span>现有重症</span><span style="color:#545499">16</span></li>
+                        <li><span>累计确诊</span><span style="color:#e83132">128556</span></li>
+                        <li><span>境外输入</span><span style="color:#476da0">10316</span></li>
+                        <li><span>累计治愈</span><span style="color:#10aeb5">119536</span></li>
+                        <li><span>累计死亡</span><span style="color:#4d5054">5697</span></li>
+                    </ul>
+                </div>
+                <div class="datas2">
+                    <ul>
+                        <li><span>现有确诊</span><span style='color:#ff6a57'>21,077,676</span></li>
+                        <li><span>累计确诊</span><span style='color:#10aeb5'>266,717,900</span></li>
+                        <li><span>累计治愈</span><span style='color:#4d5054'>240,364,726</span></li>
+                        <li><span>累计死亡</span><span style='color:#e83132'>5,275,498</span></li>
+                        <li><span>治愈率</span><span   style='color:#10aeb5'>90.1%</span></li>
+                        <li><span>病死率</span><span   style='color:#4d5054'>2%</span></li>
+                    </ul>
+                </div>
+                <div class="datas3">
+                    <ul>
+                        <li><a href="https://www.163.com/dy/article/GQL4M8OP0514TTN3.html">长图 河北部署“双节”和冬奥会疫情防控工作</a></li>
+                        <li><a href="http://news.sina.com.cn/c/2021-12-07/doc-ikyamrmy7466221.shtml">上海市进一步加强对国内疫情中高风险地区等来沪返沪人员健康管理</a></li>
+                        <li><a href="http://www.sznews.com/news/content/mb/2021-12/07/content_24797108.htm">香港新增5宗新冠肺炎确诊个案</a></li>
+                        <li><a href="http://finance.sina.com.cn/jjxw/2021-12-07/doc-ikyakumx2636046.shtml">天津对做好今冬明春疫情防控工作作出部署</a></li>
+                        <li><a href="http://baijiahao.baidu.com/s?id=1718488534285112064&wfr=spider&for=pc">浙江省疾控中心派出5支应急小分队指导协助疫情防控</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="">Copyright © 2021. All Rights Reserved.</a></li>
+                    <li><a href="">隐私条款</a></li>
+                    <li>转载内容版权归作者及来源网站所有，本站原创内容转载请注明来源</li>
+                </ul>
+            </div>
+            <div>同舟共济，抗击疫情</div>
+        </div>
+    </footer>
+</body>
+<script>
+    var nav = document.getElementsByClassName('nav');
+    var datas1 = document.getElementsByClassName('datas')[0];
+    var datas2 = document.getElementsByClassName('datas2')[0];
+    var datas3 = document.getElementsByClassName('datas3')[0];
+    let checkData1 = ()=>{
+        datas1.style.display = 'block';
+        datas2.style.display = 'none';
+        datas3.style.display = 'none';
+        nav[0].style.color = 'rgb(32, 122, 118)';
+        nav[0].style.fontWeight = 'bolder';
+        nav[0].style.borderBottom='3px solid rgb(32,122,118)';
+        nav[1].style.color = 'black';
+        nav[1].style.fontWeight = 'normal';
+        nav[1].style.borderBottom='none';
+        nav[2].style.color = 'black';
+        nav[2].style.fontWeight = 'normal';
+        nav[2].style.borderBottom='none';
+    }
+    let checkData2 = ()=>{
+        datas2.style.display = 'block';
+        datas1.style.display = 'none';
+        datas3.style.display = 'none';
+        nav[1].style.color = 'rgb(32, 122, 118)';
+        nav[1].style.fontWeight = 'bolder';
+        nav[1].style.borderBottom='3px solid rgb(32,122,118)';
+        nav[0].style.color = 'black';
+        nav[0].style.fontWeight = 'normal';
+        nav[0].style.borderBottom='none';
+        nav[2].style.color = 'black';
+        nav[2].style.fontWeight = 'normal';
+        nav[2].style.borderBottom='none';
+    }
+    let checkData3 = ()=>{
+        datas3.style.display = 'block';
+        datas1.style.display = 'none';
+        datas2.style.display = 'none';
+        nav[2].style.color = 'rgb(32, 122, 118)';
+        nav[2].style.fontWeight = 'bolder';
+        nav[2].style.borderBottom='3px solid rgb(32,122,118)';
+        nav[1].style.color = 'black';
+        nav[1].style.fontWeight = 'normal';
+        nav[1].style.borderBottom='none';
+        nav[0].style.color = 'black';
+        nav[0].style.fontWeight = 'normal';
+        nav[0].style.borderBottom='none';
+    }
+    
+</script>
+</html>
